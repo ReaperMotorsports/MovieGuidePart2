@@ -2,9 +2,6 @@
 #CIS 261
 #Wk 6 Movie Guide Pt.2
 
-from msilib import MSIMODIFY_VALIDATE_FIELD
-
-
 with open("movies.txt", "w") as file:
     file.write("Cat on the Hot Tin Roof\nOn the Waterfront\nMonty Python and the Holy Grail\n")
     
@@ -45,7 +42,7 @@ def delete_title(movie_list, index, file_name):
 
 def main():
     movie_file = "movies.txt"
-    movie_list = populate_list(movie_list)
+    movie_list = populate_list(movie_file)
     
     while True:
         display_menu()
